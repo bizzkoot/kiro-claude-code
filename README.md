@@ -46,7 +46,8 @@ Claude Code 支持 [Custom Command](https://docs.anthropic.com/en/docs/claude-co
 ### Requirements
 
 使用 `/spec` 命令和 Claude Code 聊需求：
-[requirement](./spec.png)
+
+![requirement](./spec.png)
 
 ### Design
 
