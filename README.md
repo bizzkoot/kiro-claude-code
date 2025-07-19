@@ -50,13 +50,13 @@ Claude Code 支持 [Custom Command](https://docs.anthropic.com/en/docs/claude-co
 
 ### Design
 
-[design](./design.png)
+![design](./design.png)
 
 ### Tasks
 
 说明：在 spec.md 中去掉了 Task 部分，因为 Claude Code 自己实现了 Task 的部分，它擅长用 Todo 来管理任务。
 
-[tasks](./tasks.png)
+![tasks](./task.png)
 
 Spec 对应的文件会在项目的 `.claude` 目录下生成。例如：
 
