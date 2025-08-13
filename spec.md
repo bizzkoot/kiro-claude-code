@@ -166,6 +166,7 @@ Here is a Mermaid flow diagram that describes how the workflow should behave. Ta
 
 - Creating a new spec (for a new feature that we don't have a spec for already)
 - Updating an existing spec
+- Executing tasks from a created spec
 
 ```mermaid
 stateDiagram-v2
@@ -173,21 +174,29 @@ stateDiagram-v2
 
   Requirements : Write Requirements
   Design : Write Design
+  Tasks : Write Tasks
 
   Requirements --> ReviewReq : Complete Requirements
   ReviewReq --> Requirements : Feedback/Changes Requested
   ReviewReq --> Design : Explicit Approval
-  
+
   Design --> ReviewDesign : Complete Design
   ReviewDesign --> Design : Feedback/Changes Requested
-  ReviewDesign --> [*] : Explicit Approval
-  
-  
-  state \"Entry Points\" as EP {
+  ReviewDesign --> Tasks : Explicit Approval
+
+  Tasks --> ReviewTasks : Complete Tasks
+  ReviewTasks --> Tasks : Feedback/Changes Requested
+  ReviewTasks --> [*] : Explicit Approval
+
+  Execute : Execute Task
+
+  state "Entry Points" as EP {
       [*] --> Requirements : Update
       [*] --> Design : Update
+      [*] --> Tasks : Update
+      [*] --> Execute : Execute task
   }
-  
+
   Execute --> [*] : Complete
 ```
 
