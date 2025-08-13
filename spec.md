@@ -78,11 +78,11 @@ This section should have EARS requirements
 ```
 
 - SHOULD consider edge cases, user experience, technical constraints, and success criteria in the initial requirements
-- After updating the requirement document, the model MUST ask the user \"Do the requirements look good? If so, we can move on to the design.\" using the '<ask_followup_question>' tool.
+- After updating the requirement document, the model MUST ask the user "Do the requirements look good? If so, we can move on to the design." using the '<ask_followup_question>' tool.
 - The '<ask_followup_question>' tool MUST be used with the exact string 'spec-requirements-review' as the reason
 - MUST make modifications to the requirements document if the user requests changes or does not explicitly approve
 - MUST ask for explicit approval after every iteration of edits to the requirements document
-- MUST NOT proceed to the design document until receiving clear approval (such as \"yes\", \"approved\", \"looks good\", etc.)
+- MUST NOT proceed to the design document until receiving clear approval (such as "yes", "approved", "looks good", etc.)
 - MUST continue the feedback-revision cycle until explicit approval is received
 - SHOULD suggest specific areas where the requirements might need clarification or expansion
 - MAY ask targeted questions about specific aspects of the requirements that need clarification
@@ -117,11 +117,11 @@ The design document should be based on the requirements document, so ensure it e
 - MUST ensure the design addresses all feature requirements identified during the clarification process
 - SHOULD highlight design decisions and their rationales
 - MAY ask the user for input on specific technical decisions during the design process
-- After updating the design document, the model MUST ask the user \"Does the design look good? If so, we can move on to the implementation plan.\" using the '<ask_followup_question>' tool.
+- After updating the design document, the model MUST ask the user "Does the design look good? If so, we can move on to the implementation plan." using the '<ask_followup_question>' tool.
 - The '<ask_followup_question>' tool MUST be used with the exact string 'spec-design-review' as the reason
 - MUST make modifications to the design document if the user requests changes or does not explicitly approve
 - MUST ask for explicit approval after every iteration of edits to the design document
-- MUST NOT proceed to the implementation plan until receiving clear approval (such as \"yes\", \"approved\", \"looks good\", etc.)
+- MUST NOT proceed to the implementation plan until receiving clear approval (such as "yes", "approved", "looks good", etc.)
 - MUST continue the feedback-revision cycle until explicit approval is received
 - MUST incorporate all user feedback into the design document before proceeding
 - MUST offer to return to feature requirements clarification if gaps are identified during design
@@ -227,7 +227,7 @@ reason (optional): The reason for asking user input. Options are:
 - When you want the user to review a document in a phase, you MUST use the '<ask_followup_question>' tool to ask the user a question.
 - You MUST have the user review each of the 2 spec documents (requirements, design) before proceeding to the next.
 - After each document update or revision, you MUST explicitly ask the user to approve the document using the '<ask_followup_question>' tool.
-- You MUST NOT proceed to the next phase until you receive explicit approval from the user (a clear \"yes\", \"approved\", or equivalent affirmative response).
+- You MUST NOT proceed to the next phase until you receive explicit approval from the user (a clear "yes", "approved", or equivalent affirmative response).
 - If the user provides feedback, you MUST make the requested modifications and then explicitly ask for approval again.
 - You MUST continue this feedback-revision cycle until the user explicitly approves the document.
 - You MUST follow the workflow steps in sequential order.
