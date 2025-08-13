@@ -17,7 +17,7 @@ Each Spec directory contains 3 files representing three stages:
 
 - Requirements document
 - User stories and acceptance criteria
-- Written using the [EARS](https://visuresolutions.com/en/living-guides/ears-requirements/) standard
+- Written using the [EARS](https://translate.google.com/translate?hl=en&sl=zh-CN&u=https://visuresolutions.com/zh-CN/%E7%94%9F%E6%B4%BB%E6%8C%87%E5%8D%97/%E9%87%87%E7%94%A8%E8%80%B3%E6%9C%B5%E7%AC%A6%E5%8F%B7/&prev=search) standard
 
 2️⃣ design.md
 
